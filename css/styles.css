@@ -23,6 +23,7 @@
   --our-team-backgr-color: #f5f4fa;
   --our-team-cards-backgr-color: #ffffff;
   --primary--link-color: #ffffff;
+  --features-icon-bg-color: #f5f4fa;
 }
 
 p,
@@ -141,20 +142,30 @@ header {
 .header-contact-list :not(:last-child) {
   margin-right: 50px;
 }
-
+.header-contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--header-contact-color);
+}
 .header-contact-link {
   font-style: inherit;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--header-contact-color);
+  color: inherit;
 }
-.header-contact-link:hover {
+.header-contact-item:hover {
   color: var(--header-hover-color);
 }
-.header-contact-link:focus {
+.header-contact-item:focus {
   color: var(--header-hover-color);
+}
+.header-contact-item .header-contact-icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 /* ---------HERO----------- */
 .hero {
