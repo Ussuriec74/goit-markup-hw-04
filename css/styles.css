@@ -22,6 +22,7 @@
   --hero-backgr-color: #2f303a;
   --our-team-backgr-color: #f5f4fa;
   --our-team-cards-backgr-color: #ffffff;
+  --primary--link-color: #ffffff;
 }
 
 p,
@@ -160,6 +161,14 @@ header {
   align-items: center;
   text-align: center;
   background-color: var(--hero-backgr-color);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -265,6 +274,7 @@ header {
   margin-bottom: 10px;
 }
 .our-team-proffetions {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -275,6 +285,32 @@ header {
   background-color: var(--our-team-cards-backgr-color);
   padding-top: 30px;
   padding-bottom: 30px;
+}
+.our-team-socials-list {
+  display: flex;
+  justify-content: center;
+}
+.our-team-socials-link {
+  width: 44px;
+  height: 44px;
+  color: #afb1b8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.our-team-socials-link:hover,
+.our-team-socials-link:focus {
+  color: var(--primary--link-color);
+  background-color: var(--accent-color);
+}
+.our-team-socials-item + .our-team-socials-item {
+  margin-left: 10px;
+}
+.our-team-socials-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 /* ---------FOOTER--------- */
 footer {
