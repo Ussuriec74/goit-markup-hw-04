@@ -68,7 +68,7 @@ a {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 /* ---------HEADER--------- */
@@ -285,6 +285,9 @@ header {
 }
 .our-team-item {
   width: calc((100% - 90px) / 4);
+
+  box-shadow: 0 2px 1px 0 rgba(00, 00, 00, 0.2),
+    0 1px 1px 0 rgba(00, 00, 00, 0.14);
 }
 .our-team-item:not(:last-child) {
   margin-right: 30px;
@@ -387,7 +390,12 @@ footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
+.footer-conteiner {
+  display: flex;
+}
+.footer-nav {
+  margin-right: 70px;
+}
 .footer-logo-accent {
   color: var(--footer-logo-accent-color);
 }
@@ -413,6 +421,38 @@ footer {
   letter-spacing: 0.03em;
   color: var(--footer-address-color);
 }
+.footer-socials {
+  width: 206px;
+  height: 80px;
+}
+.footer-socials-title {
+  margin-bottom: 20px;
+}
+.footer-socials-list {
+  display: flex;
+}
+.footer-socials-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--footer-address-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-socials-link:focus,
+.footer-socials-link:hover {
+  background-color: var(--accent-color);
+}
+.footer-socials-item + .footer-socials-item {
+  margin-left: 10px;
+}
+.footer-socials-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
 /*---------PORTFOLIO--------- */
 
 .portfolio-title {
@@ -437,6 +477,13 @@ footer {
 .portfolio-item-content {
   width: calc(100% / 3 - 30px);
 }
+.portfolio-item-img {
+  display: block;
+}
+.portfolio-item-img:hover,
+.portfolio-item-img:focus {
+  box-shadow: 0 4px 4px 0 rgba(00, 00, 00, 0.25);
+}
 .portfolio-item-text {
   padding: 20px 24px;
   border-left: 1px solid #eeeeee;
@@ -457,14 +504,14 @@ footer {
   background-color: var(--btn-color);
   cursor: pointer;
 }
-.portfolio-filtr-btn:hover {
-  color: var(--secondary-btn-color);
-  background-color: var(--accent-color);
-}
+.portfolio-filtr-btn:hover,
 .portfolio-filtr-btn:focus {
   color: var(--secondary-btn-color);
   background-color: var(--accent-color);
+  box-shadow: 0 2px 2px 0 rgba(00, 00, 00, 0.12),
+    0 1px 2px 0 rgba(00, 00, 00, 0.08);
 }
+
 .portfolio-item-content {
   margin-right: 30px;
   margin-bottom: 30px;
