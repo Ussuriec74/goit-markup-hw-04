@@ -116,7 +116,7 @@ header {
 }
 .header-nav-link .header-link {
   font-style: inherit;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   vertical-align: Top;
@@ -151,7 +151,6 @@ header {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  padding: 32px 0;
   font-style: inherit;
   font-weight: 500;
   font-size: 14px;
@@ -184,6 +183,9 @@ header {
   background-size: cover;
   padding-top: 200px;
   padding-bottom: 200px;
+  max-width: 1600px;
+  height: auto;
+  margin: 0 auto;
 }
 .main-titele {
   /* background-color: var(--basic-text-color); */
@@ -399,6 +401,7 @@ footer {
 }
 .footer-conteiner {
   display: flex;
+  align-items: baseline;
 }
 .footer-nav {
   margin-right: 70px;
