@@ -406,6 +406,9 @@ footer {
 .footer-nav {
   margin-right: 70px;
 }
+.logo {
+  display: block;
+}
 .footer-logo-accent {
   color: var(--footer-logo-accent-color);
 }
